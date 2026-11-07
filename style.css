@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf5;
+    color: #39302c;
+    line-height: 1.6;
+}
+
+/* encabezado */
+
+header {
+    min-height: 600px;
+    background: linear-gradient(120deg, #493126, #875b43);
+    color: white;
+}
+
+/* navegacion */
+
+.navegacion {
+    max-width: 1150px;
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.logo span {
+    color: #f5c99d;
+}
+
+.enlaces {
+    display: flex;
+    gap: 22px;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.enlaces a:hover {
+    color: #f5c99d;
+}
+
+/* portada */
+
+.portada {
+    max-width: 1150px;
+    margin: auto;
+    padding: 125px 25px;
+}
+
+.texto-portada {
+    max-width: 650px;
+}
+
+.etiqueta {
+    color: #b87950;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.portada .etiqueta {
+    color: #f5c99d;
+}
+
+h1 {
+    font-size: 62px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #f5c99d;
+}
+
+.portada p {
+    font-size: 18px;
+    color: #f2e6dc;
+    margin-bottom: 30px;
+}
+
+/* botones */
+
+.boton {
+    display: inline-block;
+    padding: 13px 24px;
+    background: #bd8059;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background: #a56b46;
+}
+
+/* secciones */
+
+.seccion {
+    max-width: 1150px;
+    margin: auto;
+    padding: 80px 25px;
+}
+
+.titulo-seccion {
+    max-width: 700px;
+    margin-bottom: 35px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.titulo-seccion p:last-child {
+    color: #766a63;
+}
+
+/* beneficios */
+
+.beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tarjeta-beneficio {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid #eee1d6;
+}
+
+.tarjeta-beneficio h3 {
+    margin-bottom: 10px;
+}
+
+/* razas */
+
+.razas {
+    max-width: none;
+    background: #f3e9df;
+    padding-left: max(25px, calc((100% - 1100px) / 2));
+    padding-right: max(25px, calc((100% - 1100px) / 2));
+}
+
+.contenedor-razas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tarjeta-raza {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(70, 45, 30, 0.08);
+}
+
+.tarjeta-raza img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.contenido-tarjeta {
+    padding: 22px;
+}
+
+.contenido-tarjeta h3 {
+    margin-bottom: 10px;
+}
+
+.contenido-tarjeta p {
+    color: #766a63;
+    font-size: 14px;
+}
+
+/* cuidados */
+
+.lista-cuidados {
+    display: grid;
+    gap: 18px;
+}
+
+.cuidado {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 18px;
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #eee1d6;
+}
+
+.cuidado span {
+    background: #bd8059;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.cuidado h3 {
+    margin-bottom: 5px;
+}
+
+.cuidado p {
+    color: #766a63;
+}
+
+/* alimentacion */
+
+.alimentacion {
+    max-width: none;
+    background: #f3e9df;
+    padding-left: max(25px, calc((100% - 1100px) / 2));
+    padding-right: max(25px, calc((100% - 1100px) / 2));
+}
+
+.caja-alimentacion {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.caja-alimentacion h3 {
+    margin-bottom: 15px;
+}
+
+.caja-alimentacion ul {
+    padding-left: 22px;
+}
+
+.caja-alimentacion li {
+    margin-bottom: 10px;
+    color: #766a63;
+}
+
+/* contacto */
+
+.contacto {
+    text-align: center;
+    background: #493126;
+    color: white;
+    padding: 80px 25px;
+}
+
+.contacto h2 {
+    font-size: 38px;
+}
+
+.contacto p:not(.etiqueta) {
+    color: #e9d9ce;
+    margin-bottom: 25px;
+}
+
+.contacto .etiqueta {
+    color: #f5c99d;
+}
+
+/* pie de pagina */
+
+footer {
+    background: #30221b;
+    color: #e9d9ce;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 13px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* adaptacion a celulares */
+
+@media (max-width: 750px) {
+
+    .navegacion {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .enlaces {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .portada {
+        padding: 90px 25px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-razas {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+}
